@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#00cc6a"/>
+    </linearGradient>
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+  <circle cx="512" cy="480" r="260" fill="none" stroke="url(#glow)" stroke-width="12" opacity="0.3"/>
+  <circle cx="512" cy="480" r="180" fill="none" stroke="url(#glow)" stroke-width="8" opacity="0.5"/>
+  <circle cx="512" cy="480" r="100" fill="none" stroke="#00ff88" stroke-width="6" filter="url(#neon)"/>
+  <!-- Eye / Lens -->
+  <ellipse cx="512" cy="480" rx="55" ry="55" fill="#00ff88" opacity="0.15"/>
+  <circle cx="512" cy="480" r="28" fill="#00ff88" filter="url(#neon)"/>
+  <circle cx="512" cy="480" r="12" fill="#0a0e17"/>
+  <!-- Crosshair lines -->
+  <line x1="512" y1="200" x2="512" y2="380" stroke="#00ff88" stroke-width="3" opacity="0.6"/>
+  <line x1="512" y1="580" x2="512" y2="760" stroke="#00ff88" stroke-width="3" opacity="0.6"/>
+  <line x1="232" y1="480" x2="412" y2="480" stroke="#00ff88" stroke-width="3" opacity="0.6"/>
+  <line x1="612" y1="480" x2="792" y2="480" stroke="#00ff88" stroke-width="3" opacity="0.6"/>
+  <!-- Corner brackets -->
+  <path d="M300 300 L300 260 L340 260" fill="none" stroke="#00ff88" stroke-width="4" opacity="0.8"/>
+  <path d="M724 300 L724 260 L684 260" fill="none" stroke="#00ff88" stroke-width="4" opacity="0.8"/>
+  <path d="M300 660 L300 700 L340 700" fill="none" stroke="#00ff88" stroke-width="4" opacity="0.8"/>
+  <path d="M724 660 L724 700 L684 700" fill="none" stroke="#00ff88" stroke-width="4" opacity="0.8"/>
+  <!-- Text -->
+  <text x="512" y="880" text-anchor="middle" font-family="SF Mono, Menlo, monospace" font-size="72" font-weight="bold" fill="#00ff88" letter-spacing="16">OVERWATCH</text>
+</svg>
