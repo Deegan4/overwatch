@@ -18,7 +18,13 @@
 /out/
 
 # production
-/build
+/build/icon.iconset
+
+# electron
+/dist-electron
+
+# playwright
+.playwright-mcp/
 
 # misc
 .DS_Store
